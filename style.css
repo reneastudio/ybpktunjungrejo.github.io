@@ -19,12 +19,18 @@
   /* NAVIGASI */
   .nav {
     width: 100%;
-    background-color: #edfbff;
+    background-color: transparent;
     display: flex;
     align-items: center;
     z-index: 9999;
     padding: 30px 0;
     position: fixed;
+    transition: .3s all;
+  }
+  .nav.scrolled {
+    background-color: #edfbff;
+    padding: 5px 0;
+    transition: .3s all;
   }
   .nav > .nav-header {
     flex: 0.95;

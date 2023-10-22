@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     z-index: 9999;
-    padding: 30px 0;
+    padding: 1rem;
     position: fixed;
     transition: .3s all;
   }
@@ -75,7 +75,7 @@
     .nav > .nav-header {
       padding-left: 1rem;
     }
-    .nav {
+    .nav.scrolled {
       padding: 1rem;
       position: fixed;
     }

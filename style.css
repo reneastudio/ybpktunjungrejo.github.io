@@ -6,6 +6,14 @@
     font-family: 'Inter', sans-serif;
     color: #50595c;
   }
+  @media (max-width: 768px) {
+    .column.column-33, .column.column-67, .column.column-50  {
+        max-width: 100% !important;
+    }
+  }
+  h4 {
+    font-weight: 700;
+  }
 
 
   /* NAVIGASI */
@@ -16,12 +24,13 @@
     align-items: center;
     z-index: 9999;
     padding: 30px 0;
+    position: fixed;
   }
   .nav > .nav-header {
     flex: 0.95;
     padding-left: 4rem;
   }
-  .nav > .nav-header > .nav-title {
+  .nav > .nav-header > .nav-title a {
     font-size: 32px;
     color: #2B2E35;
     font-weight: 700;
@@ -64,7 +73,11 @@
       padding: 1rem;
       position: fixed;
     }
-    .nav > .nav-header > .nav-title {
+    .nav > .nav-header > .nav-title img {
+     width: 32px;
+     height: auto;
+    }
+    .nav > .nav-header > .nav-title a {
       font-size: 24px;
     }
     .nav > .nav-btn {
@@ -117,9 +130,10 @@
   
 /* HERO */
 .hero {
-    background: #edfbff;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    background: url(images/hero-bg.jpg) center center no-repeat #edfbff;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 0;
     text-align: center;
     color: #2B2E35;
 }
@@ -165,7 +179,7 @@
 
 /* HERO IMAGES */
 .hero-images {
-    background: #edfbff;
+    padding-top: 120px;
     padding-bottom: 0;
     color: #2B2E35;
     display: flex; 
@@ -194,7 +208,7 @@
     background: #fff9eb;
 }
 .visi h4 {
-    font-size: 30px;
+    font-size: 34px;
     letter-spacing: -1px;
 }
 
@@ -205,7 +219,7 @@
     padding-bottom: 120px;
 }
 .misi h4 {
-    font-size: 30px;
+    font-size: 34px;
     letter-spacing: -1px;
 }
 .misi h5 {
@@ -214,6 +228,9 @@
 }
 .misi p {
     font-size: 20px;
+}
+.daftar-misi {
+    margin-top: 20px;
 }
 .misi img.icon {
     padding: 8px 10px;
@@ -226,16 +243,21 @@
 .galeri {
     padding-top: 120px;
     padding-bottom: 102px;
-    background: #fff9eb;
+    background: url(images/bg-doodle.png) top center no-repeat #fff9eb;
     display: flex;
+}
+.galeri h4 {
+    font-size: 34px;
+    letter-spacing: -1px;
 }
 .pilihan-unit {
     align-self: center;
     font-size: 20px;
     margin-bottom: 18px;
+    padding-left: 40px !important;
 }
 .duapertiga {
-    height: 260px;
+    height: 300px;
     margin-bottom: 18px;
 }
 .sepertiga {
@@ -275,6 +297,9 @@
     letter-spacing: -1px;
   }
   @media (max-width: 768px) {
+    .pilihan-unit {
+        padding-left: inherit;
+    }
     .pilihan-unit a {
         font-size: 16px;
     }

@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     z-index: 9999;
-    padding: 1rem;
+    padding: 2rem 1rem;
     position: fixed;
     transition: .3s all;
   }
@@ -71,6 +71,9 @@
   .nav > #nav-check {
       display: none;
   }
+  .active {
+    font-weight: 700;
+  }
   @media (max-width: 768px) {
     .nav > .nav-header {
       padding-left: 1rem;
@@ -114,7 +117,7 @@
       background-color: #edfbff;
       height: 0;
       transition: all 0.3s ease-in;
-      top: 50px;
+      top: 58px;
       left: 0;
       overflow: hidden;
       z-index: 9999;
@@ -245,6 +248,71 @@
     margin-bottom: 12px;
 }
 
+
+/* PROFIL */
+.profil.tk {
+  padding-top: 120px;
+  padding-bottom: 0;
+  background: url(images/gedung-tk-tabitha.jpg) center center no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.profil.smp {
+  padding-top: 120px;
+  padding-bottom: 0;
+  background: url(images/smpk-ybpk-tunjungrejo.jpg) center center no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.profil h4 {
+  background: #edfbff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+.profil-content {
+  position: relative;
+}
+.panel-body {
+  position: absolute;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 6px 6px 46px 0px rgba(114, 108, 108, 0.089);
+  border-radius: 16px;
+}
+
+
+/* GURU */
+.guru {
+    padding-top: 240px;
+    padding-bottom: 120px;
+}
+.guru h4 {
+    font-size: 34px;
+    letter-spacing: -1px;
+}
+.guru h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.guru p {
+    font-size: 20px;
+}
+.daftar-guru {
+    margin-top: 20px;
+    text-align: center;
+}
+.foto-guru {
+  padding: 0 40px;
+}
+@media (max-width: 768px) {
+  .guru {
+    padding-top: 280px;
+  }
+}
+
+
 /* GALERI */
 .galeri {
     padding-top: 120px;
@@ -316,3 +384,14 @@
     padding-bottom: 102px;
 
 }  
+
+
+/* FORMULIR */
+.button-primary {
+  display: block;
+  color: #fff;
+  background: #12c401;
+  border-radius: 999px;
+  padding: 10px 22px;
+  text-align: center;
+}

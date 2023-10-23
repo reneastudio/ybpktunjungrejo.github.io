@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi kami - YBPK GKJW Tunjungrejo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="https://ybpktunjungrejo.org"><img src="images/logo ybpk gkjw.png" alt="logo ybpk gkjw"> YBPK Tunjungrejo</a>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <ul class="nav-list">
+          <li><a href="tk-tabitha.html">Unit TK</a></li>
+          <li><a href="smpk-ybpk.html">Unit SMP</a></li>
+          <li><a href="kontak.html" class="active">Hubungi Kami</a></li>
+          <li id="donasi"><a href="donasi.html">Donasi</a></li>
+        </ul>
+    </nav>      
+
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <div class="sub-title">Sehati - Sepikir - Sejiwa</div>
+                <h1>Hubungi Kami</h1>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="misi">
+        <div class="container">
+            <div class="row">
+                <div class="column column-67">
+                    <p>Isi formulir berikut untuk menghubungi kami. <br> Formulir akan langsung dikirim via WhatsApp.</p>
+                </div>
+            </div>
+            
+            <div class="row daftar-misi">                          
+                <div class="column">
+                    <form class="whatsapp-form">
+                        <span class="form-block">
+                        <div class="datainput">
+                        <label>Nama</label>
+                        <input class="validate" id="wa_name" name="name" required="" type="text" value=''/>
+                        </div>
+                        <div class="datainput">
+                        <label>Nomer HP</label>
+                        <input class="validate" id="wa_nomer" name="nomer" required="" type="tel" value=''/>
+                        </div>
+                        <div class="datainput">
+                        <label>Pilih unit sekolah</label>
+                        <select id="unit">
+                          <option hidden='hidden' selected='selected' value='default'>Pilih unit pendidikan</option>
+                          <option value="1">TK Tabitha</option>
+                          <option value="2">SMP Kristen YBPK Tunjungrejo</option>
+                        </select>
+                        </div>
+                        <div class="datainput">
+                        <label>Tulis pesan</label>
+                        <textarea id="wa_textarea" placeholder="" maxlength="5000" row="1" required=""></textarea>
+                        </div>
+                        
+                        <a class="send_form button-primary" href="javascript:void" type="submit" title="Send to Whatsapp">Kirim via Whatsapp</a>
+                        <div id="text-info"></div>                      
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="peta">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d493.5367627884589!2d113.30877774872206!3d-8.273498337099545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1698052742614!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h4>YBPK Tunjungrejo</h4>
+                    <p>Jl Wiryo Sumarto No 5, Tunjungrejo <br> Kec. Yosowilangun, Kab. Lumajang <br> Jawa Timur
+                    </p>
+                </div>
+                <div class="column">
+                    <h4>Kontak</h4>
+                    <p>Email : smpkybpktunjungrejo@gmail.com <br>Telepon : -</p>
+                </div>
+                <div class="column">
+                    <p>&copy;2023 YBPK Tunjungrejo. <br> Hak cipta dilindungi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    const navbar = document.querySelector('.nav')
+
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > 75) {
+        navbar.classList.add('scrolled')
+    } else {
+        navbar.classList.remove('scrolled')
+    }
+    })
+</script>
+<script type="text/javascript">
+    (function($) {
+    $(document).on('click','.send_form', function(){
+    var input_blanter = document.getElementById('wa_name');
+    
+    /* Whatsapp Settings */
+    var walink = 'https://web.whatsapp.com/send',
+        phone = '6285963954968',
+        text_yes = 'Terkirim.',
+        text_no = 'Isi semua Formulir lalu klik Kirim.';
+    
+    /* Smartphone Support */
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    var walink = 'whatsapp://send';
+    }
+    
+    if("" != input_blanter.value){
+    
+     /* Call Input Form */
+    var input_select1 = $("#unit :selected").text(),
+        input_name1 = $("#wa_name").val(),
+        input_nomer1 = $("#wa_nomer").val();
+        input_textarea1 = $("#wa_textarea").val();
+    
+    /* Final Whatsapp URL */
+    var blanter_whatsapp = walink + '?phone=' + phone + '&text=' +
+        '*Nama* : ' + input_name1 + '%0A' +
+        '*Nomer HP* : ' + input_nomer1 + '%0A' +
+        '*Unit sekolah* : ' + input_select1 + '%0A' +
+        '*Pesan* : ' + input_textarea1 ;
+    
+    /* Whatsapp Window Open */
+    window.open(blanter_whatsapp,'_blank');
+    document.getElementById("text-info").innerHTML = '<span class="yes">'+text_yes+'</span>';
+    } else {
+    document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</span>';
+    }
+    });
+    })( jQuery );
+</script>
+</body>
+</html>

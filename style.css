@@ -7,12 +7,19 @@
     color: #50595c;
   }
   @media (max-width: 768px) {
-    .column.column-33, .column.column-67, .column.column-50  {
+    .column.column-33, .column.column-50 {
         max-width: 100% !important;
     }
+    .column.column-offset-25 {
+      margin-left: 0 !important;
+  }
   }
   h4 {
     font-weight: 700;
+  }
+  video {
+    width: 100%;
+    height: auto;
   }
 
 
@@ -35,6 +42,9 @@
   .nav > .nav-header {
     flex: 0.95;
     padding-left: 4rem;
+  }
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
   }
   .nav > .nav-header > .nav-title a {
     font-size: 32px;
@@ -215,10 +225,19 @@
     padding-top: 120px;
     padding-bottom: 120px;
     background: #fff9eb;
+    text-align: center;
 }
 .visi h4 {
     font-size: 34px;
     letter-spacing: -1px;
+}
+.unit .visi {
+  padding-top: 240px;
+}
+@media (max-width: 768px) {
+  .unit .visi {
+    padding-top: 300px;
+  }
 }
 
 
@@ -226,6 +245,10 @@
 .misi {
     padding-top: 120px;
     padding-bottom: 120px;
+    text-align: center;
+}
+.unit .misi {
+  padding-bottom: 0;
 }
 .misi h4 {
     font-size: 34px;
@@ -242,10 +265,15 @@
     margin-top: 20px;
 }
 .misi img.icon {
-    padding: 8px 10px;
+    padding: 12px 28px;
     background: #d7edff;
     border-radius: 12px;
     margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .daftar-misi {
+      margin-top: 0;
+  }
 }
 
 
@@ -284,8 +312,9 @@
 
 /* GURU */
 .guru {
-    padding-top: 240px;
+    padding-top: 120px;
     padding-bottom: 120px;
+    text-align: center;
 }
 .guru h4 {
     font-size: 34px;
@@ -304,21 +333,19 @@
     text-align: center;
 }
 .foto-guru {
-  padding: 0 40px;
-}
-@media (max-width: 768px) {
-  .guru {
-    padding-top: 280px;
-  }
+  border-radius: 16px;
 }
 
 
 /* GALERI */
 .galeri {
     padding-top: 120px;
-    padding-bottom: 102px;
-    background: url(images/bg-doodle.png) top center no-repeat #fff9eb;
-    display: flex;
+    padding-bottom: 120px;
+    background: #fff9eb;
+    background-size: cover;
+}
+.unit .galeri {
+  text-align: center;
 }
 .galeri h4 {
     font-size: 34px;
@@ -370,6 +397,32 @@
     text-transform: capitalize;
     letter-spacing: -1px;
   }
+
+.gabung h4 {
+    font-size: 34px;
+    letter-spacing: -1px;
+}
+.unit .gabung {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: url(images/purple-bg.png) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+}  
+.unit .gabung .button {
+  font-size: 24px;
+  color: #fff;
+  border-radius: 999px;
+  padding: 18px 28px;
+  height: inherit;
+  border: none;
+  text-transform: inherit;
+  letter-spacing: -1px;
+  margin-top: 40px;
+  border-radius: 62px;
+  background: #FC595B;
+  box-shadow: 6px 6px 46px 0px rgba(252, 89, 91, 0.25);
+}
   @media (max-width: 768px) {
     .pilihan-unit {
         padding-left: 0 !important;
@@ -379,6 +432,10 @@
     }
   }
 
+
+
+  
+/* FOOTER */
 .footer {
     padding-top: 120px;
     padding-bottom: 102px;
@@ -387,6 +444,12 @@
 
 
 /* FORMULIR */
+.formulir {
+  text-align: left;
+}
+.formulir textarea {
+  min-height: 16.5rem !important;
+}
 .button-primary {
   display: block;
   color: #fff;

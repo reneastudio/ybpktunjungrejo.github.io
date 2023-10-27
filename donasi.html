@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="column">
                     <h4>Sudah berbagi hari ini?</h4>
-                    <p> Yayasan pendidikan kami membutuhkan bantuan dana untuk operasional sekolah dan tali kasih untuk para tenaga pendidik. Mari berbagi kebahagiaan dengan membantu program donasi melalui rekening kami di bawah ini.</p>
+                    <p> Yayasan pendidikan kami membutuhkan bantuan dana untuk operasional sekolah dan tali kasih untuk para tenaga pendidik. Mari berbagi kebahagiaan dengan mengirimkan donasi melalui rekening bank kami berikut ini.</p>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="column">
                     <h4>Kontak</h4>
-                    <p>Email : smpkybpktunjungrejo@gmail.com <br>Telepon : -</p>
+                    <p>Email : - <br>Telepon : -</p>
                 </div>
                 <div class="column">
                     <p>&copy;2023 YBPK Tunjungrejo. <br> Hak cipta dilindungi</p>
@@ -81,57 +81,5 @@
             </div>
         </div>
     </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-    const navbar = document.querySelector('.nav')
-
-    window.addEventListener('scroll', () => {
-    if (window.scrollY > 75) {
-        navbar.classList.add('scrolled')
-    } else {
-        navbar.classList.remove('scrolled')
-    }
-    })
-</script>
-<script type="text/javascript">
-    (function($) {
-    $(document).on('click','.send_form', function(){
-    var input_blanter = document.getElementById('wa_name');
-    
-    /* Whatsapp Settings */
-    var walink = 'https://web.whatsapp.com/send',
-        phone = '6285963954968',
-        text_yes = 'Terkirim.',
-        text_no = 'Isi semua Formulir lalu klik Kirim.';
-    
-    /* Smartphone Support */
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    var walink = 'whatsapp://send';
-    }
-    
-    if("" != input_blanter.value){
-    
-     /* Call Input Form */
-    var input_select1 = $("#unit :selected").text(),
-        input_name1 = $("#wa_name").val(),
-        input_nomer1 = $("#wa_nomer").val();
-        input_textarea1 = $("#wa_textarea").val();
-    
-    /* Final Whatsapp URL */
-    var blanter_whatsapp = walink + '?phone=' + phone + '&text=' +
-        '*Nama* : ' + input_name1 + '%0A' +
-        '*Nomer HP* : ' + input_nomer1 + '%0A' +
-        '*Unit sekolah* : ' + input_select1 + '%0A' +
-        '*Pesan* : ' + input_textarea1 ;
-    
-    /* Whatsapp Window Open */
-    window.open(blanter_whatsapp,'_blank');
-    document.getElementById("text-info").innerHTML = '<span class="yes">'+text_yes+'</span>';
-    } else {
-    document.getElementById("text-info").innerHTML = '<span class="no">'+text_no+'</span>';
-    }
-    });
-    })( jQuery );
-</script>
 </body>
 </html>

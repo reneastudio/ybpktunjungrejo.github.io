@@ -451,6 +451,35 @@
 
 
 
+/* PENGURUS */
+.pengurus {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  font-size: 18px;
+}
+.daftar-pengurus {
+  padding: 20px 0 !important;
+  border-bottom: 1px solid #cdcdcd!important;
+}
+.daftar-pengurus:last-child {
+  border-bottom: 0 !important;
+}
+.nama {
+  font-weight: 500;
+  font-size: 22px;
+}
+.user-default {
+  text-align: center;
+}
+.user-default-pic {
+  border-radius: 50%;
+  max-height: 63px;
+  width: auto;
+  text-align: center;
+}
+
+
+
   
 /* FOOTER */
 .footer {

@@ -364,6 +364,9 @@
     font-size: 34px;
     letter-spacing: -1px;
 }
+.galeri img, .galeri video {
+  margin-bottom: 10px;
+}
 .pilihan-unit {
     align-self: center;
     font-size: 20px;

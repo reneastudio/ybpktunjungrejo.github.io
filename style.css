@@ -275,11 +275,9 @@
 .daftar-misi {
     margin-top: 20px;
 }
-.misi img.icon {
-    padding: 12px 28px;
-    background: #d7edff;
-    border-radius: 12px;
-    margin-bottom: 12px;
+.daftar-misi svg {
+    height: 48px;
+    width: auto;
 }
 @media (max-width: 768px) {
   .daftar-misi {

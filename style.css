@@ -21,6 +21,14 @@
     width: 100%;
     height: auto;
   }
+  ol.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+  ul.syarat {
+    font-size: 20px;
+  }
 
 
   /* NAVIGASI */
@@ -72,7 +80,7 @@
     cursor: pointer;
     font-size: 20px;
   }
-  .nav > .nav-list > li#donasi a {
+  .nav > .nav-list > li#ppdb a {
     color: #fff;
     background: #FC595B;
     border-radius: 999px;
